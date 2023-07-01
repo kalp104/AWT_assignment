@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class=" h-[100vh] w-[100vw] flex justify-center items-center flex-col bg-gradient-to-r from-[#001c28] from-5% via-[#35a2b6] via-90% to-[#001c28] to-5%">
+    
+    <div class="wrapper w-[90%] relative max-w-[450px] flex justify-center items-center text-center flex-col">
+        <h1 class="text-[28px]  bg-[#051619] border-[#051619] rounded-lg text-bold text-[#fff] opacity-1 mb-8 p-5 px-[103px]">Simple Calculations</h1>  
+        <div class="container bg-[#051619] text-[#fff] p-5 border-[#051619] rounded-lg">
+                <div class="inputcontainer flex justify-around  text-[20px] gap-2 my-3">
+                        <label for="first">Input1</label>
+                        <input type="text" class="bg-transparent border-[#35a2b6] border-[2px] rounded-md text-[#35a2b6]  " data-firstInput>
+                </div>
+
+                <div class="inputcontainer flex justify-around   text-[20px] gap-2 my-3">
+                    <label for="second">Input2</label>
+                    <input type="text" class="bg-transparent border-[#35a2b6] border-[2px] rounded-md text-[#35a2b6]" data-secondInput>
+                </div>
+
+
+
+
+                <div class="inputcontainer flex justify-around  -ml-1 text-[20px] gap-2 my-3">
+                    <label for="answer">answer</label>
+                    <input type="text" class="placeholder:text-center text-center bg-transparent border-[2px] rounded-md border-[#35a2b6] text-[#35a2b6]" placeholder="Answer" readonly data-output>
+                </div>
+
+                <div class="inputcontainer flex justify-around text-[20px] gap-2 my-3">
+                    <span class="text-red-700 opacity-0 " data-errorMsg>*Please Enter Numbers only</span>
+                </div>
+
+                <div class="submitcontainer flex flex-wrap justify-around text-center mt-8">
+                    <button data-inputadd class="btn w-[180px]   font-bold  rounded-lg border-[3px] bg-[#35a2b6]  m-2 p-2 hover:text-[#35a2b6] hover:border-[#35a2b6]  hover:bg-black gtransition-all duration-100 ease-in-out">addition</button>
+                    <button data-inputsub class="btn w-[180px] font-bold  rounded-lg border-[3px] bg-[#35a2b6]  m-2 p-2 hover:text-[#35a2b6] hover:border-[#35a2b6]  hover:bg-black gtransition-all duration-100 ease-in-out">subtraction</button>
+                    <button data-inputmul class="btn w-[180px]  font-bold  rounded-lg border-[3px] bg-[#35a2b6]  m-2 p-2 hover:text-[#35a2b6] hover:border-[#35a2b6]  hover:bg-black gtransition-all duration-100 ease-in-out">multiplication</button>
+                    <button data-inputdiv class="btn w-[180px]  font-bold  rounded-lg border-[3px] bg-[#35a2b6]  m-2 p-2 hover:text-[#35a2b6] hover:border-[#35a2b6]  hover:bg-black gtransition-all duration-100 ease-in-out">division</button>
+        
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+    
+</body>
+</html>
