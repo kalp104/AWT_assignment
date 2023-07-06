@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="wrapper">
+        <div class="container">
+            <div class="divison1">
+                <img class="image" src="./assets/signup.jpg"  alt="">
+            </div>
+            <div class="division2">
+                <h1 class="header">SIGN UP</h1>
+                <form action="" class="formClass">
+                    <div class="innerClass">
+                        <div class="input_class">
+                            <label for="fullName">Full Name</label>
+                            <div class="line"></div>
+                            <input type="text" id="fullName" placeholder="Enter Fullname">
+                            <span data-errorName class="name">only name</span>
+                        </div>
+                        <div class="input_class">
+                            <label for="userName">Username</label>
+                            <div class="line"></div>
+                            <input type="text" id="userName" data-userName placeholder="Enter username">
+                            <span data-errorUsername class="name">Try using upper lower and number only</span>
+
+                        </div>
+                    </div>
+                
+                    <div class="innerClass">
+
+                        <div class="input_class">
+                            <label for="phone">Phone</label>
+                            <div class="line"></div>
+                            <input type="text" id="phone" data-phone placeholder="Enter your phone number">
+                            <span data-errorPhone class="name">10digit + number input only</span>
+                        
+                        </div>
+                        <div class="input_class">
+                            <label for="email">Email</label>
+                            <div class="line"></div>
+                            <input type="email" data-email id="email" placeholder="Enter your Email">
+                            <span data-errorEmail class="name">gamil or charusat id only</span>
+                        
+                        </div>
+                    </div>
+                    <div class="gender_and_state">
+                        <div class="input_class_gender">
+                            <div>
+                                <label for="gender" id="gender">Gender</label>
+                                <div class="line"></div>
+                            </div>
+                                <div class="genderClass">
+                                    <div>
+                                        <input type="radio" class="gender" id="male" value="male">
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="gender" id="female" value="female">
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="gender" id="Others" value="Others">
+                                        <label for="Others">Others</label>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="input_class">
+                            <label for="state" class="stateClass">State</label>
+                            <div class="line stateClass" ></div>
+                            <select name="state" class="stateClass" id="state" aria-placeholder="select state">
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat" selected>Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+    
+                    </div>
+                    <div class="innerClasses">
+
+                        <div class="input_class">
+                            <label for="Password">password</label>
+                            <div class="line"></div>
+
+                            <input type="password" id="Password" data-passwordInput placeholder="Enter password">
+                            <span class="name" data-errorPassword>*add upper lower and special character</span>
+                        </div>
+                        <div class="input_class">
+                            <label for="confirmpassword">confirme password</label>
+                            <div class="line"></div>
+
+                            <input type="password" id="confirmpassword" data-confirmedPassword placeholder="confirme your password">
+                            <span class="name" data-passwordNotSame>*password doesn't match</span>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="input_class_agreement">
+                        <input type="checkbox" id="checked" required><label for="checked">are you agreed with our terms and conditions</label>
+                    </div>
+                    <div class="input_class">
+                        <!-- <label for="confirmpassword">confirme password</label> -->
+                        <input type="submit" id="submitBtn" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+     </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- Create Social media signup page with below details
+	
+
+		
+Full Name, Username, Password, Confirm Password, Gender(Radio Button), Phone No, 
+Email, State (Dropdown), Agreement(Checkbox), Register(button)
+		
+All the control must have input required.
+		
+Full Name->accept string, 
+Username->alphanumeric, 
+verify enter and confirmed password, 
+Password-> alphanumeric with some special symbol and length must be from 6 to 10, 
+Phone->10 digit only, 
+Email-> validate, 
+State->need to be selected at least one, 
+Checkbox-> must be selected.
+	
+	
+	
+Write JavaScript function which takes all input and validated the form
+	
+Display appropriate error message beside or top or bottom side of respective control in RED color with "*"
+	
+Use regular expression to inspect proper valid input.
+	
+Redirect the page on to Login page if all the form input has tested. -->
